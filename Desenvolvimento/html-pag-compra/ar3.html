@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ar-condicionado</title>
+    <link rel="stylesheet" href="../css-pag-compra/compra.css">
+    <link rel="shortcut icon" href="../Icon/favicon.svg" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            EletroDan
+        </div>
+
+        <div class="menu-mobile">
+            <div class="linha1"></div>
+            <div class="linha2"></div>
+            <div class="linha3"></div>
+        </div>
+        <div class="nav-links">
+            <ul class="nav-itens">
+                <li><a href="../htmlHome/home-logado.html#princ">Produtos</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+                <li><a href="../html-Perfil/perfil.html">Seu perfil</a></li>
+                
+            </ul>
+        </div>
+        
+    </nav>
+
+    <main>
+        <div class="geladeira">
+            <img src="../Imagens/ar-condicionado3.webp" alt="geladeira">
+        <div class="infos">
+            <p>Ar-Condicionado Split Samsung - 220V</p>
+            <p class="p2">Vendido e entregue por EletroDan</p>
+            <p class="p3">R$<span id="numero">2.370,00</span> </p>
+            <p class="p4">À vista no pix e boleto</p>
+            <p class="p5">Ou em até 10x de R$ <span id="dividir">240,00</span></p>
+
+            <div class="comprar">
+                <a href="#f-compra">Comprar</a>
+            </div>
+
+            <div id ="contador">
+                <p>Quantidade</p>
+                <button id="menos" class="botoes">
+                    -
+                </button>
+
+                <span id="valor">
+                    1
+                </span>
+
+                <button id="mais" class="botoes">
+                    +
+                </button>
+
+
+            </div>
+        </div>
+        
+        </div>
+    </main>
+
+    <section class="finalizar-compra" id="f-compra">
+        <form>
+            <div class="endereco">
+                <legend>Endereço</legend>
+                <input type="text" placeholder="Estado">
+                <input type="text" placeholder="Cidade">
+                <input type="text" placeholder="Bairro">
+                <input type="text" placeholder="Rua">
+                <input type="number" placeholder="CEP">
+            </div>
+
+            <div class="metodo">
+                <fieldset>
+                    <div class="itens">
+                        <legend>Método de pagamento</legend>
+                        <input type="radio" name="metodo" id="pix" checked> <label for="pix">Pix</label>
+                        <input type="radio" name="metodo" id="boleto"> <label for="boleto">Boleto</label>
+                        <input type="radio" name="metodo" id="cartao"> <label for="cartao">Cartão de crédito</label>
+                    </div>
+
+                </fieldset>
+            </div>
+        </form>
+    </section>
+    
+    <div class="finalizar">
+        <a href="compra-feita.html">Finalizar compra</a>
+    </div>
+
+    <section id="contatos">
+        <h2>Contatos</h2>
+        <address>
+            <p>Telefone: (123) 456-7890</p>
+            <p>Email: eletrodan@gmail.com</p>
+        </address>
+    </section>
+    
+    <footer>
+        <p>&copy;Danilo Fernandes</p>
+    </footer>
+
+    <script src="../javascript/script.js"></script>
+</body>
+</html>

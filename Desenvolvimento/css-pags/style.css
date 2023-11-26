@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding-top: 20px;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 1.3em;
+}
+
+.nav-itens {
+    list-style: none;
+    display: flex;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+.nav-itens li a {
+    padding-left: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.nav-itens li a:hover {
+    color: rgb(77, 77, 77);
+}
+
+.logo {
+    font-size: 2em;
+}
+
+.menu-mobile {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-mobile div {
+    width: 32px;
+    height: 4px;
+    background-color: black;
+    margin: 8px;
+}
+
+@media (max-width: 999px) {
+    
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-itens {
+        position: absolute;
+        top: 11vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background-color: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    .nav-itens li {
+        /* opacity: 0; */
+    }
+
+    .menu-mobile {
+        display: block;
+        position: absolute;
+        right: 8vh;
+    }
+
+    .nav-itens.active {
+        transform: translateX(0);
+    }
+
+}
+
+
+
+.destaque {
+    /* background-image: linear-gradient(to top, #3a3a3a, #bcbcbc); */
+    height: 40vh;
+    text-align: center;
+    color: rgb(50, 50, 50);
+    text-transform: uppercase;
+    margin-bottom: 5vh;
+    text-shadow: 0.5px 0.5px 1px;
+}
+
+.destaque-titulos {
+    padding-top: 15vh;
+    font-size: 1.5em;
+}
+
+.destaque-titulos h1 {
+    margin-bottom: 5vh; 
+}
+
+.destaque-titulos h2 {
+    text-decoration: underline;
+}
+
+.principal {
+    display: flex;
+}
+
+.lista {
+    display: inline-block;
+    width: 25%;
+    padding: 30px;
+    margin-top: 2vh;
+    color: rgb(1, 1, 1);
+    box-sizing: border-box;
+    height: 100vh;
+    border: solid 1px #686868;
+    margin-left: 4vh;
+}
+
+.lista h2 {
+    margin-bottom: 2vh;
+}
+
+.lista a {
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    line-height: 2;
+}
+
+.lista ul {
+    list-style: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 8vh;
+    margin-top: 2vh;
+    width: 100%;
+}
+
+.geladeiras, .ar-condicionados, .fornos, .maquinas {
+    display: flex;
+    margin-bottom: 8vh;
+}
+
+
+.produto {
+    width: 31%;
+    border: 2px solid #ccc;
+}
+
+.produto:hover {
+    border: 3px solid rgb(145, 145, 145);
+}
+
+.paragrafo {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    color: #1e1e1e;
+}
+
+.paragrafo a {
+    color: black;
+    text-decoration: none;
+}
+
+.produto img {
+    display: block;
+    width: 100%;
+}
+
+
+.preco {
+    color: rgb(0, 0, 0);
+}
+
+.avaliacoes {
+    color: rgb(219, 117, 0);
+}
+
+.geladeira1, .geladeira2, .ar-condicionado1, .ar-condicionado2, .forno1, .forno2, .maquina1, .maquina2 {
+    margin-right: 2%;
+}
+
+.mudar-pagina {
+    text-align: center;
+    margin-bottom: 5vh;
+    
+}
+
+.mudar-pagina a {
+    text-decoration: none;
+    color: #101010;
+    font-size: 1.3em;
+}
+
+.mudar-pagina p {
+    margin-bottom: 10px;
+}
+
+
+
+#um, #dois{
+    display: inline-block;
+    background-color: #101010;
+    width: 15px;
+    height: 15px;
+    padding: 8px;
+    border-radius: 100%;
+    color: white;
+
+}
+
+#p-block {
+    display: inline-block;
+}
+
+
+#contatos {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+footer {
+    background-color: #101010;
+    color: white;
+    height: 10vh;
+    text-align: center;
+    padding-top: 5vh;
+}

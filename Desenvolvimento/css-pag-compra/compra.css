@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding-top: 20px;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 1.3em;
+}
+
+.nav-itens {
+    list-style: none;
+    display: flex;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+.nav-itens li a {
+    padding-left: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.nav-itens li a:hover {
+    color: rgb(77, 77, 77);
+}
+
+.logo {
+    font-size: 2em;
+}
+
+.menu-mobile {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-mobile div {
+    width: 32px;
+    height: 4px;
+    background-color: black;
+    margin: 8px;
+}
+
+@media (max-width: 999px) {
+    
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-itens {
+        position: absolute;
+        top: 11vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background-color: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    
+    .menu-mobile {
+        display: block;
+        position: absolute;
+        right: 8vh;
+    }
+
+    .nav-itens.active {
+        transform: translateX(0);
+    }
+
+}
+
+.geladeira {
+    display: flex;
+    margin-top: 10vh;
+    justify-content: center;
+}
+
+.geladeira img {
+    width: 400px;
+    border: 2px solid #dcdcdc;
+    margin-left: 2vh;
+}
+
+.geladeira .infos {
+    font-size: 1.5em;
+    margin-left: 5vh;
+}
+
+.geladeira .infos .p2 {
+    font-size: 0.7em;
+    color: rgb(70, 70, 255);
+}
+
+.geladeira .infos .p3 {
+    margin-top: 5vh;
+}
+
+.geladeira .infos .p4 {
+    font-size: 0.8em;
+    color: #818181;
+    margin-top: 2vh;
+}
+
+.geladeira .infos .p5 {
+    font-size: 0.8em;
+}
+
+.agrupar {
+    margin-top: 2vh;
+    display: flex;
+}
+
+
+
+.comprar {
+    margin-top: 5vh;
+}
+
+#contador {
+    margin-top: 5vh;
+}
+
+.botoes {
+    border: none;
+    background-color: rgb(205, 205, 205);
+    cursor: pointer;
+    padding: 5px;
+    width: 30px;
+    border-radius: 8px;
+    font-size: 1.1em;
+}
+
+.comprar a {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    padding: 10px 60px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.comprar a:hover {
+    background-color: rgb(36, 36, 36);
+}
+
+.finalizar-compra {
+    display: flex;
+    justify-content: center;
+}
+
+.endereco {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30vh;
+}
+
+.endereco input {
+    margin-top: 10px;
+    width: 90vh;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 10px;
+}
+
+.metodo {
+    margin-top: 3vh;
+}
+
+.metodo input {
+    margin-top: 2vh;
+}
+
+fieldset {
+    border-radius: 10px;
+}
+
+.itens {
+    padding: 20px;
+}
+
+.finalizar {
+    display: flex;
+    justify-content: center;
+    margin: 1vh;
+}
+
+.finalizar a {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-size: 1.3em;
+    
+}
+
+.finalizar a:hover {
+    background-color: rgb(36, 36, 36);
+}
+
+.compra-feita {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.compra-feita img {
+    width: 200px;
+}
+
+.compra-feita p {
+    color: #37C451;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 2vh;
+}
+
+#contatos {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+footer {
+    margin-top: 10vh;
+    background-color: #101010;
+    color: white;
+    height: 10vh;
+    text-align: center;
+    padding-top: 5vh;
+}
